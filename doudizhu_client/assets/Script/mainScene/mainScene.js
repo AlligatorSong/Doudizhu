@@ -13,10 +13,10 @@ cc.Class({
     },
     buttonClick: function (event ,customData) {
         if (customData==='wxlogin'){
-            console.log('global--111wxlogin');
+            let playerData =  global.playerDataController.playerData
             global.socketController.login(
-                global.playerDataController.uniqueID,
-                global.playerDataController.nickName,
+                playerData.uniqueID,
+                playerData.nickName,
                 function (err,data) {
                     if(err){
                         console.log('err ',err);

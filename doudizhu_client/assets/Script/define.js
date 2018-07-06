@@ -1,5 +1,6 @@
 
-const define = {}
-define.serverURL = 'http://localhost:3000'
+const define = {
+    serverURL:'http://localhost:3000'
+}
 
 module.exports = define;

@@ -12,11 +12,11 @@ SocketController.prototype.init = function () {
 };
 
 SocketController.prototype.login = function (uniqueID,nickName,cb) {
-    console.log('global--2222222');
-    this.socket.emit('login',{
+    let temp = {
         uniqueID: uniqueID,
         nickName: nickName
-    });
+    }
+    this.socket.emit('login',temp);
 };
 
 module.exports = SocketController;
