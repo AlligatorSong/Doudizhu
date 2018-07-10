@@ -1,6 +1,6 @@
-var PlayerData = require('./player-data');
+let PlayerData = require('./player-data');
 
-var PlayerDataController = function () {
+let PlayerDataController = function () {
     this.playerData = new PlayerData()
 };
 

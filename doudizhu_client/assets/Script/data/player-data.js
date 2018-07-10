@@ -1,10 +1,11 @@
 
 
-var PlayerData = function () {
-    this.uid = undefined;
-    this.uniqueID = 10000;
-    this.nickName = 'Alligator';
-    // this.iconURL = 'Alligator';
+let PlayerData = function () {
+    this.uid = '10000';
+    this.uniqueID = '10000';
+    this.nickName = '鳄鱼';
+    this.houseCardCount = 5
+    // this.avatarUrl = 'Alligator';
 };
 
 //微信登录成功
